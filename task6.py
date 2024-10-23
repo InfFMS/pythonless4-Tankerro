@@ -9,3 +9,13 @@
 # Вывод:
 # 5 3
 
+def sokr(a, b):
+    nod = 0
+    for i in range(max(a, b), 0, -1):
+        if a % i == 0 and b % i == 0:
+            nod = i
+            break
+
+    print(a//nod, b//nod)
+
+sokr(15, 25)
