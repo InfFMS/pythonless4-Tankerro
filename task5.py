@@ -7,7 +7,7 @@
 
 
 def reverse_num(a):
-    l = len(str(a))
+
     str_ = ""
 
     while a > 9:
