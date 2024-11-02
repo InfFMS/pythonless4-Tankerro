@@ -5,10 +5,15 @@
 # Идея задачи реализовать алгоритм,
 # который будет работать для любого введенного натурального числа.
 
+
 def reverse_num(a):
-    str_= ''
-    for i in range(len(str(a))-1, -1, -1):
-        ai = str(a[i])
-        str_ += ai
+
+    str_ = ""
+
+    while a > 9:
+        str_ += str(a % 10)
+        a = a // 10
+    else:
+        str_ += str(a)
     return str_
-print(reverse_num(123))
+print(reverse_num(123456789))
